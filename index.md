@@ -6,15 +6,8 @@
 
 ---
 
-<div align="right">
 
-[⬆ 返回顶部](#top)   |   <button id="themeToggle">🌙 夜间模式</button>
 
-</div>
-
-> 注：GitHub 会屏蔽脚本执行，因此夜间模式与折叠交互需在本地 Markdown 预览（如 Typora / Obsidian / GitHub Pages）中使用。
-
----
 
 ## 📖 目录（点击可跳转）
 
@@ -534,21 +527,4 @@
   th { background: #f6f7fb22; }
 </style>
 
-<script>
-(function(){
-  const key = 'dark-mode';
-  const btn = document.getElementById('themeToggle');
-  if (!btn) return;
-  const stored = (function(){ try { return localStorage.getItem(key) === '1'; } catch(e){ return false; } })();
-  document.body.classList.toggle('dark', stored);
-  btn.textContent = stored ? '☀️ 日间模式' : '🌙 夜间模式';
-  btn.addEventListener('click',()=>{
-    const dark = !document.body.classList.contains('dark');
-    document.body.classList.toggle('dark', dark);
-    try { localStorage.setItem(key, dark?'1':'0'); } catch(e){}
-    btn.textContent = dark ? '☀️ 日间模式' : '🌙 夜间模式';
-  });
-})();
 
-!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3Nl8945QiQe4oI6L",ck:"3Nl8945QiQe4oI6L"});
-</script>
