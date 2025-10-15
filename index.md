@@ -534,16 +534,5 @@
 
 </div>
 
-<style>
-  :root { --accent: #7aa2ff; }
-  h1, h2 { background: linear-gradient(90deg, #7aa2ff, #7fffd4); -webkit-background-clip: text; color: transparent; }
-  a { text-decoration: none; border-bottom: 1px dashed rgba(122,162,255,.4); }
-  a:hover { border-bottom-style: solid; }
-  #themeToggle { border: 1px solid #ccc; border-radius: 6px; background: #f6f7fb; cursor: pointer; padding: 4px 8px; }
-  body.dark { background: #0b0c10; color: #e8eaf0; }
-  table { width: 100%; border-collapse: collapse; }
-  th, td { border: 1px solid #e5e7eb33; padding: 8px 10px; }
-  th { background: #f6f7fb22; }
-</style>
 
 
